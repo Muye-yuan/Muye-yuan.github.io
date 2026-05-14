@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Muye Yuan</title>
+    <meta
+      name="description"
+      content="Muye Yuan, KCL student working on tactile sensing, visuo-tactile perception, robot manipulation, and embodied AI."
+    >
+    <meta name="keywords" content="Muye Yuan, Muye-yuan, KCL, King's College London, tactile sensing, visuo-tactile perception, robot manipulation, embodied AI">
+    <meta name="author" content="Muye Yuan">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://muye-yuan.github.io/">
+    <meta property="og:title" content="Muye Yuan">
+    <meta property="og:description" content="KCL student working on tactile sensing, visuo-tactile perception, robot manipulation, and embodied AI.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://muye-yuan.github.io/">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/246493515?v=4">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Muye Yuan">
+    <meta name="twitter:description" content="KCL student working on tactile sensing, visuo-tactile perception, robot manipulation, and embodied AI.">
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/246493515?v=4">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muye Yuan",
+        "url": "https://muye-yuan.github.io/",
+        "sameAs": ["https://github.com/Muye-yuan"],
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "King's College London"
+        },
+        "knowsAbout": [
+          "Tactile sensing",
+          "Visuo-tactile perception",
+          "Robot manipulation",
+          "Embodied AI",
+          "Vision-language-action models"
+        ]
+      }
+    </script>
+    <style>
+      :root {
+        --text: #111;
+        --muted: #555;
+        --accent: #bd4b45;
+        --accent-soft: #f3d9d7;
+        --line: #e3e3e3;
+        --bg: #fff;
+        --ink-bg: #222;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.48;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .wrap {
+        width: min(960px, calc(100% - 30px));
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.96);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      nav {
+        height: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 18px;
+        font-size: 16px;
+      }
+
+      nav a {
+        color: #111;
+      }
+
+      nav a.active {
+        color: var(--accent);
+      }
+
+      .shortcut {
+        color: #111;
+        white-space: nowrap;
+      }
+
+      main {
+        padding: 48px 0 0;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 230px;
+        gap: 42px;
+        align-items: start;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(2.4rem, 6vw, 3.7rem);
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 1.08;
+      }
+
+      h1 strong {
+        font-weight: 850;
+      }
+
+      h2 {
+        margin: 36px 0 16px;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 7px;
+        font-size: 1.45rem;
+        font-weight: 520;
+      }
+
+      h2 a {
+        color: var(--text);
+      }
+
+      p {
+        margin: 0 0 13px;
+      }
+
+      .place {
+        margin-bottom: 18px;
+        color: var(--text);
+      }
+
+      .place span,
+      .red {
+        color: var(--accent);
+      }
+
+      code,
+      .mark {
+        border-radius: 2px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-family:
+          ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", monospace;
+        font-size: 0.92em;
+        padding: 1px 5px;
+      }
+
+      .profile {
+        padding-top: 92px;
+      }
+
+      .avatar {
+        width: 185px;
+        height: 185px;
+        display: block;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.22);
+        margin: 0 auto 18px;
+      }
+
+      .caption {
+        width: 185px;
+        margin: 0 auto;
+        font-family:
+          ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", monospace;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.55;
+      }
+
+      .contact {
+        margin-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+      }
+
+      .contact a {
+        color: var(--accent);
+      }
+
+      .experience {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin-top: 24px;
+      }
+
+      .exp-card {
+        min-height: 138px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        padding: 14px;
+        text-align: center;
+      }
+
+      .exp-logo {
+        width: 42px;
+        height: 42px;
+        display: inline-grid;
+        place-items: center;
+        border-radius: 50%;
+        background: #f4f4f4;
+        color: var(--accent);
+        font-weight: 800;
+        margin-bottom: 9px;
+      }
+
+      .exp-card strong {
+        display: block;
+        font-size: 0.95rem;
+      }
+
+      .exp-card span {
+        display: block;
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .news {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .news li {
+        display: grid;
+        grid-template-columns: 116px minmax(0, 1fr);
+        gap: 14px;
+        margin-bottom: 10px;
+      }
+
+      .news time {
+        color: var(--accent);
+        white-space: nowrap;
+      }
+
+      .pub-list {
+        list-style: decimal;
+        padding-left: 24px;
+        margin: 0;
+      }
+
+      .pub {
+        display: grid;
+        grid-template-columns: 138px minmax(0, 1fr);
+        gap: 18px;
+        margin-bottom: 24px;
+      }
+
+      .thumb {
+        min-height: 96px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        background:
+          linear-gradient(135deg, rgba(189, 75, 69, 0.14), transparent 55%),
+          #f7f7f7;
+        display: grid;
+        place-items: center;
+        color: var(--accent);
+        font-family:
+          ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", monospace;
+        font-size: 1.55rem;
+        font-weight: 800;
+      }
+
+      .pub-title {
+        font-size: 1.04rem;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+
+      .authors,
+      .venue {
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+
+      .venue {
+        font-style: italic;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .links a {
+        border: 1px solid var(--line);
+        border-radius: 3px;
+        color: var(--accent);
+        padding: 2px 8px;
+        font-size: 0.9rem;
+      }
+
+      footer {
+        margin-top: 42px;
+        background: var(--ink-bg);
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        padding: 12px 0;
+      }
+
+      @media (max-width: 760px) {
+        nav {
+          justify-content: center;
+          gap: 14px;
+          font-size: 15px;
+        }
+
+        main {
+          padding-top: 34px;
+        }
+
+        .experience {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .pub {
+          grid-template-columns: 1fr;
+        }
+
+        .news li {
+          grid-template-columns: 94px minmax(0, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+
+        .profile {
+          padding-top: 8px;
+        }
+
+        .avatar {
+          width: 170px;
+          height: 170px;
+        }
+
+        .caption {
+          width: 170px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .experience {
+          grid-template-columns: 1fr;
+        }
+
+        .contact {
+          display: block;
+        }
+
+        .contact a {
+          display: inline-block;
+          margin-right: 12px;
+          margin-bottom: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="wrap" aria-label="Primary navigation">
+        <a class="active" href="#about">about</a>
+        <a href="#research">research</a>
+        <a href="#github">github</a>
+        <span class="shortcut">⌘ k</span>
+        <a href="https://github.com/Muye-yuan" aria-label="GitHub profile">⌕</a>
+      </nav>
+    </header>
+
+    <main class="wrap">
+      <section id="about" class="hero">
+        <div>
+          <h1><strong>Muye</strong> Yuan</h1>
+          <p class="place"><span>King's College London</span>, London, UK.</p>
+
+          <p>
+            I am a <code>KCL student</code> majoring in
+            <code>tactile sensing</code>. My interests lie in enabling robots
+            to understand contact through visuo-tactile perception, force
+            estimation, and contact-rich manipulation.
+          </p>
+          <p>
+            My GitHub is currently a research map for tactile robotics: I keep
+            forks of sensor papers, robot-control libraries, and embodied AI
+            toolkits close so I can read, reproduce, and connect ideas across
+            tactile sensing, manipulation, and vision-language-action models.
+          </p>
+          <p>
+            I am especially interested in (1) vision-based tactile sensors and
+            GelSight-style sensing, (2) 3D shape reconstruction and 6D force
+            estimation, and (3) robot manipulation systems using Franka/Panda,
+            UR5e, simulation environments, and VLA policies.
+          </p>
+
+          <div class="contact" aria-label="Profile links">
+            <a href="https://github.com/Muye-yuan">GitHub</a>
+            <a href="https://github.com/Muye-yuan?tab=repositories">Repositories</a>
+            <a href="https://github.com/Muye-yuan?tab=stars">Stars</a>
+          </div>
+
+          <div class="experience" aria-label="Research profile cards">
+            <article class="exp-card">
+              <div class="exp-logo">K</div>
+              <strong>King's College London</strong>
+              <span>Student</span>
+              <span>Present</span>
+            </article>
+            <article class="exp-card">
+              <div class="exp-logo">T</div>
+              <strong>Tactile Sensing</strong>
+              <span>Major direction</span>
+              <span>Vision + force</span>
+            </article>
+            <article class="exp-card">
+              <div class="exp-logo">R</div>
+              <strong>Robot Manipulation</strong>
+              <span>Franka / Panda / UR5e</span>
+              <span>Control stack</span>
+            </article>
+            <article class="exp-card">
+              <div class="exp-logo">A</div>
+              <strong>Embodied AI</strong>
+              <span>VLA policies</span>
+              <span>Research tracking</span>
+            </article>
+          </div>
+        </div>
+
+        <aside class="profile">
+          <img
+            class="avatar"
+            src="https://avatars.githubusercontent.com/u/246493515?v=4"
+            alt="Muye Yuan"
+          >
+          <div class="caption">
+            GitHub<br>
+            @Muye-yuan<br>
+            Tactile sensing
+          </div>
+        </aside>
+      </section>
+
+      <section id="news" aria-labelledby="news-title">
+        <h2 id="news-title"><a href="#news">news</a></h2>
+        <ul class="news">
+          <li>
+            <time>Mar 2026</time>
+            <span>
+              Forked <a href="https://github.com/Muye-yuan/FreeTacMan">FreeTacMan</a>,
+              a robot-free visuo-tactile data collection system for
+              contact-rich manipulation.
+            </span>
+          </li>
+          <li>
+            <time>Mar 2026</time>
+            <span>
+              Added <a href="https://github.com/Muye-yuan/GenForce_Code">GenForce_Code</a>,
+              code for training tactile sensors to learn force sensing from
+              each other.
+            </span>
+          </li>
+          <li>
+            <time>Jan 2026</time>
+            <span>
+              Built a tactile sensing reading stack through forks including
+              <a href="https://github.com/Muye-yuan/9DTact">9DTact</a>,
+              <a href="https://github.com/Muye-yuan/gelsight">gelsight</a>,
+              and <a href="https://github.com/Muye-yuan/ViTaMIn-B_code">ViTaMIn-B_code</a>.
+            </span>
+          </li>
+          <li>
+            <time>Jan 2026</time>
+            <span>
+              Added robot manipulation tooling:
+              <a href="https://github.com/Muye-yuan/libfranka">libfranka</a>,
+              <a href="https://github.com/Muye-yuan/panda-gym">panda-gym</a>,
+              and <a href="https://github.com/Muye-yuan/mini-vla">mini-vla</a>.
+            </span>
+          </li>
+          <li>
+            <time>Nov 2025</time>
+            <span>
+              Created GitHub profile
+              <a href="https://github.com/Muye-yuan">@Muye-yuan</a>.
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="research" aria-labelledby="research-title">
+        <h2 id="research-title">
+          <a href="#research">Selected research map</a>
+          &nbsp;·&nbsp;
+          <a href="https://github.com/Muye-yuan?tab=repositories">GitHub repositories</a>
+        </h2>
+        <ol class="pub-list">
+          <li>
+            <article class="pub">
+              <div class="thumb">FT</div>
+              <div>
+                <div class="pub-title">
+                  FreeTacMan: Robot-free Visuo-Tactile Data Collection System
+                  for Contact-rich Manipulation
+                </div>
+                <div class="authors">Research fork in Muye Yuan's GitHub map</div>
+                <div class="venue">ICRA 2026 project repository</div>
+                <div class="links">
+                  <a href="https://github.com/Muye-yuan/FreeTacMan">Code</a>
+                  <a href="http://opendrivelab.com/FreeTacMan">Project</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="pub">
+              <div class="thumb">9D</div>
+              <div>
+                <div class="pub-title">
+                  9DTact: Compact Vision-Based Tactile Sensor for 3D Shape
+                  Reconstruction and 6D Force Estimation
+                </div>
+                <div class="authors">Research fork in Muye Yuan's GitHub map</div>
+                <div class="venue">RAL & ICRA 2024 repository</div>
+                <div class="links">
+                  <a href="https://github.com/Muye-yuan/9DTact">Code</a>
+                  <a href="https://linchangyi1.github.io/9DTact/">Project</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="pub">
+              <div class="thumb">GF</div>
+              <div>
+                <div class="pub-title">
+                  Training Tactile Sensors to Learn Force Sensing from Each Other
+                </div>
+                <div class="authors">Research fork in Muye Yuan's GitHub map</div>
+                <div class="venue">Tactile force sensing and transfer learning</div>
+                <div class="links">
+                  <a href="https://github.com/Muye-yuan/GenForce_Code">Code</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="pub">
+              <div class="thumb">LF</div>
+              <div>
+                <div class="pub-title">
+                  libfranka: Real-time C++ Client Library for Franka Robots
+                </div>
+                <div class="authors">Robot manipulation software stack</div>
+                <div class="venue">Franka robot control tooling</div>
+                <div class="links">
+                  <a href="https://github.com/Muye-yuan/libfranka">Code</a>
+                  <a href="https://frankarobotics.github.io/docs/libfranka/docs/index.html">Docs</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="pub">
+              <div class="thumb">VLA</div>
+              <div>
+                <div class="pub-title">
+                  mini-vla: Minimal Vision-Language-Action Policy Stack
+                </div>
+                <div class="authors">Robot policy learning fork</div>
+                <div class="venue">Images, text, robot states, and actions</div>
+                <div class="links">
+                  <a href="https://github.com/Muye-yuan/mini-vla">Code</a>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+      <section id="github" aria-labelledby="github-title">
+        <h2 id="github-title"><a href="#github">GitHub tracking</a></h2>
+        <ul class="news">
+          <li>
+            <time>Starred</time>
+            <span>
+              <a href="https://github.com/jiangranlv/robotics_arXiv_daily">robotics_arXiv_daily</a>,
+              an automated embodied AI paper feed.
+            </span>
+          </li>
+          <li>
+            <time>Starred</time>
+            <span>
+              <a href="https://github.com/xxm19/hommi">HoMMI</a>, whole-body
+              mobile manipulation from human demonstrations.
+            </span>
+          </li>
+          <li>
+            <time>Starred</time>
+            <span>
+              <a href="https://github.com/jiangranlv/embodied-ai-start">embodied-ai-start</a>,
+              a beginner-oriented embodied AI research guide.
+            </span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      © Copyright 2026 Muye Yuan.
+    </footer>
+  </body>
+</html>

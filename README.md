@@ -1,42 +1,20 @@
-# Hi, I'm Muye Yuan
+# Muye Yuan — academic homepage
 
-I'm a KCL student majoring in tactile sensing. My GitHub activity is centered
-around visuo-tactile sensors, robot manipulation, force estimation, Franka/Panda
-tooling, VLA policies, and embodied AI research workflows.
+A simple text-based homepage for Muye Yuan, a first-year PhD student at the University of York supervised by Dr Jihong Zhu.
 
-## Research Interests
+Website: https://muye-yuan.github.io/
 
-- Tactile sensing and visuo-tactile perception
-- 3D shape reconstruction and 6D force estimation
-- Contact-rich robot manipulation
-- Franka/Panda and UR5e robot software stacks
-- Vision-language-action policies and embodied AI
+## Content
 
-## GitHub Signal
+- About: York PhD research in deformable object manipulation and contact-rich manipulation; previous master's studies at King's College London in tactile and force sensing.
+- Research interests: a short text list.
+- News: China Scholarship Council (CSC) scholarship. Award date omitted until confirmed.
+- Publications: omitted until available.
 
-My public repositories are currently mostly research forks. They form a compact
-reading and implementation map:
+## Editing and deployment
 
-- [FreeTacMan](https://github.com/Muye-yuan/FreeTacMan): robot-free
-  visuo-tactile data collection for contact-rich manipulation.
-- [9DTact](https://github.com/Muye-yuan/9DTact): compact vision-based tactile
-  sensor for 3D shape reconstruction and 6D force estimation.
-- [GenForce_Code](https://github.com/Muye-yuan/GenForce_Code): code for
-  learning force sensing across tactile sensors.
-- [libfranka](https://github.com/Muye-yuan/libfranka): real-time control
-  library for Franka robots.
-- [mini-vla](https://github.com/Muye-yuan/mini-vla): beginner-friendly VLA
-  policy code.
-- [robocup_ur5e](https://github.com/Muye-yuan/robocup_ur5e): KCL-related UR5e
-  robotics work.
+Edit `index.html` for text and links, and `style.css` for layout. No dependencies, JavaScript, or build step. Open `index.html` directly or use a static file server. GitHub Pages can serve the repository root on `main`.
 
-## Currently Tracking
+The layout uses a simple profile sidebar and text content, inspired by the reference academic homepage supplied by the owner. No reference-site biography or publication content is reused.
 
-- [robotics_arXiv_daily](https://github.com/jiangranlv/robotics_arXiv_daily)
-- [HoMMI](https://github.com/xxm19/hommi)
-- [embodied-ai-start](https://github.com/jiangranlv/embodied-ai-start)
-
-## Links
-
-- GitHub: <https://github.com/Muye-yuan>
-- Portfolio page: open `index.html`
+See `HOW_TO_EDIT_AND_HIDE.md` for editing details.
